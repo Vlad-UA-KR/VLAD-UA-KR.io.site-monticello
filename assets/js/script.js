@@ -33,8 +33,11 @@ $(function () {
 			return
 		};
 
-		$('.navigation__burger, .navigation__menu').removeClass('active');
-		$('body').removeClass('lock');
+		if ($(e.target.closest('a')).hasClass('menu__link')) {
+			$('.navigation__burger, .navigation__menu').removeClass('active');
+			$('body').removeClass('lock');
+			return
+		};
 	})
 })
 
