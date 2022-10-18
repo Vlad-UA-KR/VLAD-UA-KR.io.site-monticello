@@ -1,4 +1,12 @@
 .map {
 	width: 100%;
 	min-height: 699px;
+
+	&__title {
+		font-weight: 700;
+	}
+
+	&__text {
+		font-weight: 300;
+	}
 }

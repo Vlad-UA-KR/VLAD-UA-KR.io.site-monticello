@@ -1,4 +1,4 @@
-// -----------------Slider-Header--------------
+// -----------------Slider-Header----------------
 $(function () {
 	$('.slider-header').slick({
 		slidesToShow: 1,
@@ -22,7 +22,7 @@ $(function () {
 		]
 	})
 });
-// ------------------Header-burger-----------
+// ------------------Header-burger---------------
 
 $(function () {
 	$('.navigation').click(function (e) {
@@ -41,7 +41,7 @@ $(function () {
 	})
 })
 
-// -----------------Slider-News--------------
+// -----------------Slider-News------------------
 
 $(function () {
 	$('.slider-news').slick({
@@ -73,7 +73,7 @@ $(function () {
 	})
 });
 
-// -----------------Gallary-Images--------------
+// -----------------Gallary-Images---------------
 
 $(function () {
 
@@ -105,3 +105,17 @@ $(function () {
 		}
 	})
 });
+
+
+// -----------------Contact-Form-----------------
+
+$(function () {
+	$('#map').on('mouseenter', function () {
+		$('#feedback-form').css('margin', '50px auto');
+		$('.footer__small-container').css('margin', '50px auto')
+	})
+	$('#map').on('mouseleave', function () {
+		$('#feedback-form').css('margin', '-300px auto 0');
+		$('footer__small-container').css('margin', '350px auto')
+	})
+})

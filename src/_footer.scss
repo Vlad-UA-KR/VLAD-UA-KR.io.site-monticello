@@ -10,6 +10,7 @@
 		max-width: 770px;
 		min-height: 100%;
 		margin: 350px auto 0;
+		transition: all 0.5s ease-in;
 	}
 
 	&__row-flex {
@@ -28,12 +29,13 @@
 
 	&__text {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		align-items: center;
 		justify-content: center;
 		font-size: 14px;
 		color: rgb(255, 255, 255);
 		font-family: "GothamBook";
+		gap: 20px 20px;
 
 		i {
 			padding: 0 5px 0 5px;
@@ -44,7 +46,6 @@
 		background-color: rgba(255, 255, 255, 0.5);
 		width: 1px;
 		height: 20px;
-		margin: 0 20px 0 20px;
 		display: inline-block;
 	}
 }
@@ -60,6 +61,7 @@
 	background-image: url(../../img/footer_form_background.png);
 	background-position: bottom;
 	background-repeat: no-repeat;
+	transition: all 0.5s ease-in;
 
 	&__separator {
 		background-color: rgb(44, 64, 88);
@@ -198,5 +200,14 @@
 @media (max-width: 610px) {
 	.feedback__button {
 		margin: 20px 0 20px 0;
+	}
+}
+
+@media (max-width: 371px) {
+	.footer__text {
+		gap: 20px 21px;
+	}
+	.footer__vertical-separator {
+		opacity: 0;
 	}
 }
