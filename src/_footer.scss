@@ -37,8 +37,21 @@
 		font-family: "GothamBook";
 		gap: 20px 20px;
 
+		a {
+			color: white;
+			transition: color 0.2s ease-in;
+		}
+
+		a:hover,
+		a:focus,
+		i:hover,
+		i:focus {
+			color: red;
+		}
+
 		i {
 			padding: 0 5px 0 5px;
+			transition: color 0.2s ease-in;
 		}
 	}
 
